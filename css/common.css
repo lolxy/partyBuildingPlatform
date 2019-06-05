@@ -319,9 +319,12 @@ html,body{
 .main .cbox h3{
 	margin: 0;
 	font-size: 30px;
-	color:#a00000;
 	font-weight: 300;
 	margin-bottom: 18px;
+}
+
+.main .cbox h3 a{
+	color:#a00000;
 }
 
 .main .cbox .caption{
