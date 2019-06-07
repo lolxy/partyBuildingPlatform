@@ -90,8 +90,8 @@ html,body{
 	margin-bottom: 0;
 }
 
-.slider .nav li{
-	height: 3.75rem;
+.slider .nav a{
+	height: 3.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -100,10 +100,10 @@ html,body{
 	transition: all ease-in-out .5s;
 }
 
-.slider .nav li i{
+.slider .nav a i{
 	display: block;
-	width: 2.92rem;
-	height: 2.5rem;
+	width: 2.8rem;
+	height: 2.3rem;
 	margin-right: .83rem;
 	background-position: center;
 	background-size: contain;
@@ -115,7 +115,7 @@ html,body{
 	background-image: url(../img/icon_home.png);
 }
 
-.slider .nav li.on .icon-home,.slider .nav li:hover .icon-home{
+.slider .nav a.on .icon-home,.slider .nav a:hover .icon-home{
 	background-image: url(../img/icon_home_active.png);
 }
 
@@ -123,7 +123,7 @@ html,body{
 	background-image: url(../img/icon_play.png);
 }
 
-.slider .nav li.on .icon-play,.slider .nav li:hover .icon-play{
+.slider .nav a.on .icon-play,.slider .nav a:hover .icon-play{
 	background-image: url(../img/icon_play_active.png);
 }
 
@@ -131,7 +131,7 @@ html,body{
 	background-image: url(../img/icon_chat.png);
 }
 
-.slider .nav li.on .icon-chat,.slider .nav li:hover .icon-chat{
+.slider .nav a.on .icon-chat,.slider .nav a:hover .icon-chat{
 	background-image: url(../img/icon_chat_active.png);
 }
 
@@ -139,35 +139,40 @@ html,body{
 	background-image: url(../img/icon_user.png);
 }
 
-.slider .nav li.on .icon-user,.slider .nav li:hover .icon-user{
+.slider .nav a.on .icon-user,.slider .nav a:hover .icon-user{
 	background-image: url(../img/icon_user_active.png);
 }
 
-.slider .nav li span{
+.slider .nav a span{
 	display: flex;
 	align-items: center;
 	flex: 1;
-	height: 3.75rem;
+	height: 3.5rem;
 	overflow: hidden;
 	font-size: 1.25rem;
 	color:#fff;
 	transition: all ease-in-out .5s;
 }
 
-.slider .nav li.on,.slider .nav li:hover{
+.slider .nav a.on,.slider .nav a:hover{
 	background-color: rgba(255,255,255,.2);
 }
 
-.slider .nav li.on span,.slider .nav li:hover span{
+.slider .nav a.on span,.slider .nav a:hover span{
 	color:#fad20b;
 }
 
 .slider .setbox{
-	height: 5rem;
+	height: 3.5rem;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top:1.25rem;
+}
+
+.slider .setbox.on{
+	background-color: rgba(255,255,255,.2);
 }
 
 .setbox a{
@@ -177,11 +182,15 @@ html,body{
 .icon-set{
 	background-image: url(../img/icon_set.png);
 	display: block;
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 2.2rem;
+	height: 2.2rem;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.slider .setbox.on .icon-set{
+	background-image: url(../img/icon_set_active.png);
 }
 
 .container .content{
@@ -303,7 +312,7 @@ html,body{
 .menu-wrap .menu a em{
 	font-style: normal;
 	position: absolute;
-	bottom: .21rem;
+	bottom: .42rem;
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -484,4 +493,44 @@ html,body{
 
 .m-wrap .m-list ul li a:hover{
 	color:#f0cc6c;
+}
+
+/* 设置列表 */
+.set-wrapper{
+	padding: .83rem;
+	padding-top: 0;
+}
+
+.set-list{
+	background: none;
+}
+
+.set-list li{
+	height: 5rem;
+	margin-bottom: .42rem;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+
+.set-list li a.mui-navigate-right{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding-left: 2.92rem;
+	font-size: 1.67rem;
+	color:#a80000;
+	cursor: pointer;
+}
+
+.set-list li a.mui-navigate-right:after{
+	color:#a80000;
+	font-size: 1.83rem;
+}
+
+.set-list li:after{
+	display: none;
 }
