@@ -25,16 +25,16 @@ html,body{
 
 /* 左侧菜单 */
 .container .slider{
-	width: 300px;
+	width: 12.5rem;
 	background-color: #b50512;
 	overflow: hidden;
 }
 
 .slider h1{
-	height: 120px;
-	line-height: 120px;
+	height: 5rem;
+	line-height: 5rem;
 	text-align: center;
-	font-size: 28px;
+	font-size: 1.17rem;
 	color:#fff;
 	font-weight: 500;
 	position: relative;
@@ -42,24 +42,24 @@ html,body{
 
 .slider h1:after{
 	content:"";
-	width: 40px;
-	height: 40px;
+	width: 1.67rem;
+	height: 1.67rem;
 	background-color: #fff;
 	display: block;
 	border-radius: 50%;
 	position: absolute;
 	top:50%;
 	right:0;
-	margin-top: -20px;
-	margin-right: -20px;
+	margin-top: -.83rem;
+	margin-right: -.83rem;
 }
 
 .slider .avatar-wrap{
-	height: 330px;
+	height: 13.75rem;
 }
 
 .slider .avatar-wrap .photo{
-	height: 180px;
+	height: 7.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -68,8 +68,8 @@ html,body{
 .slider .avatar-wrap .photo .thumb{
 	border:10px solid #fdf202;
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+	width: 6.25rem;
+	height: 6.25rem;
 	outline: none;
 	background-color: #fff;
 	background-position: center;
@@ -78,33 +78,33 @@ html,body{
 }
 
 .slider .avatar-wrap .tbox{
-	margin-top: 20px;
+	margin-top: .83rem;
 }
 
 .slider .avatar-wrap .tbox p{
-	font-size: 25px;
+	font-size: 1.04rem;
 	text-align: center;
-	line-height: 40px;
+	line-height: 1.67rem;
 	color:#fff;
 	font-weight: 300;
 	margin-bottom: 0;
 }
 
 .slider .nav li{
-	height: 94px;
+	height: 3.75rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding: 0 30px;
+	padding: 0 1.25rem;
 	cursor: pointer;
 	transition: all ease-in-out .5s;
 }
 
 .slider .nav li i{
 	display: block;
-	width: 70px;
-	height: 60px;
-	margin-right: 20px;
+	width: 2.92rem;
+	height: 2.5rem;
+	margin-right: .83rem;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -147,9 +147,9 @@ html,body{
 	display: flex;
 	align-items: center;
 	flex: 1;
-	height: 94px;
+	height: 3.75rem;
 	overflow: hidden;
-	font-size: 30px;
+	font-size: 1.25rem;
 	color:#fff;
 	transition: all ease-in-out .5s;
 }
@@ -163,7 +163,7 @@ html,body{
 }
 
 .slider .setbox{
-	height: 150px;
+	height: 5rem;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -177,8 +177,8 @@ html,body{
 .icon-set{
 	background-image: url(../img/icon_set.png);
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 2.5rem;
+	height: 2.5rem;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -192,48 +192,50 @@ html,body{
 }
 
 .content .header{
-	height: 120px;
+	height: 5rem;
 	background-color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: .83rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 60px;
+	padding: 0 2.5rem;
 }
 
 .time{
-	font-size: 28px;
+	font-size: 1.17rem;
 	color:#b10006;
 }
 
 .time span{
-	margin-right: 30px;
+	margin-right: 1.25rem;
 }
 
 .rightbox,.searchbox form{
 	display: flex;
+	align-items: center;
 }
 
 .searchbox .search{
-	width: 235px;
-	height: 60px;
-	border-radius: 60px;
+	width: 9.79rem;
+	height: 2.5rem;
+	border-radius: 2.5rem;
 	text-align: left;
-	font-size: 28px;
+	font-size: 1.17rem;
 	color:#fff;
 	background-color: #e29ba1;
-	line-height: 60px;
-	padding: 0 20px;
+	line-height: 2.5rem;
+	padding: 0 .83rem;
+	margin-bottom: 0;
 	font-family: "microsoft yahei";
 }
 
 .icon-search{
-	width: 60px;
-	height: 60px;
-	margin-left: 40px;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-left: 1.67rem;
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 2.5rem;
+	height: 2.5rem;
 	background:url(../img/icon_search.png) center no-repeat;
 	background-color: transparent !important;
 	border: none !important;
@@ -244,20 +246,20 @@ html,body{
     color: #fff;
 }
 .search::-moz-placeholder{
-    color: #fff;        
+    color: #fff;
 }
 .search:-ms-input-placeholder{
-    color: #fff;        
+    color: #fff;
 }
 
 .add-plus{
-	margin-left: 40px;
+	margin-left: 1.67rem;
 }
 
 .icon-plus{
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 2.5rem;
+	height: 2.5rem;
 	background:url(../img/icon_plus.png) center no-repeat;
 	background-size: contain;
 }
@@ -270,79 +272,80 @@ html,body{
 }
 
 .banner-box{
-	height: 430px;
+	height: 16rem;
 	overflow: hidden;
-	background-position: left;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.news{
-	padding: 20px;
+/* 首页模块 */
+.home-news{
+	padding: .83rem;
 	flex:1;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 }
 
-.news h2{
+.home-news h2{
 	background-color: #b50512;
-	font-size: 28px;
+	font-size: 1.17rem;
 	color:#fff;
-	height: 94px;
-	line-height: 94px;
-	padding-left: 75px;
+	height: 3.92rem;
+	line-height: 3.92rem;
+	padding-left: 3.13rem;
 	font-weight: 300;
 	margin: 0;
 }
 
-.main{
-	margin-top: 20px;
+.home-news .main{
+	margin-top: .83rem;
 	flex:1;
 	overflow: hidden;
 	display: flex;
 	background-color: #fff;
 }
 
-.main .thumb{
-	width: 300px;
+.home-news .main .thumb{
+	width: 12.5rem;
 }
 
-.main .cbox{
-	padding: 20px 100px 20px 50px;
+.home-news .main .cbox{
+	padding: .83rem 100px .83rem 50px;
 	flex:1;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 }
 
-.main .cbox h3{
+.home-news .main .cbox h3{
 	margin: 0;
-	font-size: 30px;
+	font-size: 1.25rem;
 	font-weight: 300;
-	margin-bottom: 18px;
+	margin-bottom: .75rem;
 }
 
-.main .cbox h3 a{
+.home-news .main .cbox h3 a{
 	color:#a00000;
 }
 
-.main .cbox .caption{
-	font-size: 22px;
+.home-news .main .cbox .caption{
+	font-size: .92rem;
 	color:#666;
-	margin-bottom: 15px;
+	margin-bottom: .63rem;
 }
 
-.main .cbox p{
-	font-size: 24px;
-	line-height: 36px;
+.home-news .main .cbox p{
+	font-size: 1rem;
+	line-height: 1.5rem;
 	text-indent: 2em;
 	color:#666;
 }
 
-.main .cbox .source{
+.home-news .main .cbox .source{
 	text-align: right;
-	font-size: 24px;
+	font-size: 1rem;
 	color:#666;
-	margin-top: 15px;
+	margin-top: .63rem;
 }
