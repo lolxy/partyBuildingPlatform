@@ -651,25 +651,31 @@ html,body{
 	margin-left: .5rem;
 }
 
-.honor-wrap .rbox .list{
-	flex-wrap: wrap;
-}
-
 .honor-wrap .rbox .list .item{
 	width: 50%;
 	overflow: hidden;
+	height: 10.5rem;
 	padding:.42rem .83rem;
 }
 
 .honor-wrap .rbox .list .item p{
 	margin-bottom: 0;
+	height: 2.1rem;
+	line-height: 2.2rem;
 	text-align: center;
 }
 
-.honor-wrap .avatar{
+.honor-wrap .list-wrap{
 	width: 100%;
-	height: 0;
-	padding-bottom: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: max-content;
+}
+
+.honor-wrap .avatar{
+	width: 8rem;
+	height: 8rem;
+	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
 	transition: all ease-in-out .4s;
