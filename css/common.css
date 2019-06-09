@@ -3,6 +3,7 @@
 	padding: 0;
 	list-style: none;
 	box-sizing: border-box;
+	font-style: normal;
 }
 
 html,body{
@@ -12,6 +13,16 @@ html,body{
 
 .bg-white{
 	background-color: #fff;
+}
+
+.mui-ellipsis-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal!important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
@@ -342,16 +353,20 @@ html,body{
 	padding: 0 .5rem;
 	border-radius: 1rem;
 	position: relative;
+	overflow: hidden;
 }
 
 .menu-wrap .menu a em{
 	font-style: normal;
 	position: absolute;
-	bottom: .42rem;
+	bottom: 0;
+	height: 1.5rem;
+	line-height: 1.35rem;
 	left: 0;
 	width: 100%;
 	text-align: center;
 	font-size: 0.83rem;
+	background-color: rgba(255,255,255,.2);
 }
 
 .menu-wrap a{
@@ -373,6 +388,8 @@ html,body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(0,0,0,.1);
+	margin-top: .42rem;
 }
 
 .menu-wrap .sub-menu a{
@@ -517,7 +534,8 @@ html,body{
 	align-items: center;
 	padding: 0 .42rem;
 	overflow: hidden;
-	margin-bottom: 1.5rem;
+	height: 1.8rem;
+	margin-bottom: 1.2rem;
 }
 
 .m-wrap .m-list ul li a{
@@ -798,4 +816,185 @@ html,body{
 .detail-wrap .footer{
 	height: 1.42rem;
 	background-color: #e2e2e2;
+}
+
+/* 新闻列表 */
+.news-wrap{
+	flex:1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: .63rem 0.83rem;
+}
+
+.news-wrap .news-list{
+
+}
+
+.news-list ul li{
+	margin-bottom: .83rem;
+}
+
+.news-list ul li:last-child{
+	margin-bottom: 0;
+}
+
+.news-list ul li .box{
+	background-color: #fff;
+	display: flex;
+	padding-right: .42rem;
+}
+
+.news-list ul li .box .thumb{
+	padding: .67rem 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.news-list ul li .box .content{
+	flex:1;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding: .67rem 0;
+	padding-right: 5rem;
+	max-height: 12rem;
+	position: relative;
+}
+
+.news-list ul li .box .content h2{
+	line-height: 1.92rem;
+	color:#ae0000;
+	font-size: 1.33rem;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: .83rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.news-list ul li .box .content .des{
+	flex:1;
+	overflow: hidden;
+	color:#898989;
+	font-size: 1rem;
+	line-height: 2rem;
+	text-indent: 2em;
+	max-height: 6.25rem;
+}
+
+.news-list ul li .box .content .type{
+	height: 2.08rem;
+	line-height: 2.08rem;
+	font-size: 1.08rem;
+	color:#898989;
+	position: absolute;
+	right: 5rem;
+	bottom: .63rem;
+	background-color: #fff;
+	padding-left: 1rem;
+}
+
+.news-list ul li .box .action{
+	width: 8.33rem;
+	height: 12rem;
+	display: flex;
+}
+
+.news-list ul li .box .action > div{
+	width: 4.17rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-list ul li .box .action .play{
+	background-color: #d9828a;
+	position: relative;
+}
+
+.news-list ul li .box .action .play .down{
+	width: 100%;
+	height: 2.08rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.news-list ul li .box .action > div i{
+	display: block;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon-pause{
+	background-image: url('../img/icon_play1.png');
+}
+
+.icon-download{
+	background-image: url('../img/icon_download.png');
+}
+
+.news-list ul li .box .action .play .down:after{
+	content:"";
+	width: 1.42rem;
+	height: .83rem;
+	background: url(../img/xsj.png) center center no-repeat;
+	background-size:contain;
+}
+
+.news-list ul li .box .action .download{
+	background-color: #b50512;
+}
+
+.news-list ul li .tipbox{
+	height: 4.17rem;
+	background-color:#b50512;
+	margin: 0 4.59rem 0 4.17rem;
+	padding: 0 2.08rem;
+	display: none;
+}
+
+.news-list ul li .tipbox .tiplist{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.news-list ul li .tipbox span{
+	color:#fff;
+	display: flex;
+	align-items: center;
+}
+
+.news-list ul li .tipbox i.icon-down{
+	width: 1.3rem;
+	height: 1.3rem;
+	border-radius:.3rem;
+	padding: .3rem;
+	display: block;
+	background: url(../img/xsub.png) center center no-repeat #fff;
+	background-size: contain;
+	background-origin:content-box;
+	margin-right: .63rem;
+}
+
+.news-list ul li .tipbox em{
+	font-style: normal;
+	font-size: 1.33rem;
+	margin-right: .63rem;
+}
+
+.news-list ul li .tipbox small{
+	font-size: 1rem;
+	font-weight: 200;
+	margin-top: .42rem;
 }
