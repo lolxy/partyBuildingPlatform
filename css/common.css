@@ -998,3 +998,42 @@ html,body{
 	font-weight: 200;
 	margin-top: .42rem;
 }
+
+/* 视频列表 */
+.video-wrap{
+	padding: 1.04rem 2.71rem;
+	flex:1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	margin: .83rem;
+}
+
+.video-wrap li{
+	list-style:disc;
+	height: 2.64rem;
+	color:#737373;
+	font-size: 1.33rem;
+}
+
+.video-wrap li a{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.33rem;
+	color:#737373;
+	height: 100%;
+}
+
+.video-wrap li span.tit{
+	flex:1;
+	height: 100%;
+	line-height: 2.64rem;
+	overflow: hidden;
+	margin-right: 1.46rem;
+}
+
+.video-wrap li span.time{
+	width: 12.5rem;
+	color:#737373;
+}
