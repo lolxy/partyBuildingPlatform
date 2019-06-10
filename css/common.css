@@ -1216,3 +1216,107 @@ body {
 .user-wrapper .user-menu ul li a:hover{
 	opacity: .6;
 }
+
+/* 党务公开栏 */
+.dw-wrap{
+	flex:1;
+	overflow: hidden;
+	margin: .83rem;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.dw-wrap .dw-header{
+	color:#fff;
+	background-color: #ba1e22;
+	height: 11.67rem;
+	padding: .42rem 2.08rem;
+	overflow: hidden;
+}
+
+.dw-wrap .dw-header h2{
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.83rem;
+	margin-bottom: .83rem;
+	text-align: center;
+}
+
+.dw-wrap .dw-header .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.dw-wrap .dw-header .box span{
+	font-size: 1rem;
+	line-height: 1.85rem;
+	font-weight: 200;
+}
+
+.dw-wrap .dw-table{
+	flex: 1;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ae0000;
+}
+
+.dw-wrap .dw-table p{
+	margin: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	background-color: #e2e2e2;
+	font-size: 1.08rem;
+	color:#ae0000;
+}
+
+.dw-wrap .dw-table .table-wrap{
+	flex:1;
+	overflow: hidden;
+}
+
+.dw-wrap .dw-table table{
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.dw-wrap .dw-table table thead{
+	height: 2.29rem;
+	border-bottom: 1px solid #ae0000;
+}
+
+.dw-wrap .dw-table table thead, .dw-wrap .dw-table table tbody tr{
+	display:table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.dw-wrap .dw-table table thead th{
+	height: 2.29rem;
+	text-align: center;
+	color:#ba1b1d;
+	font-size: 1.08rem;
+	font-weight: 200;
+}
+
+.dw-wrap .dw-table table tbody{
+	height:100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.dw-wrap .dw-table table tbody td{
+	font-size: 1rem;
+	color:#ba1b1d;
+	font-weight: 200;
+	height: 1.75rem;
+	text-align: center;
+}
