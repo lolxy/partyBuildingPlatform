@@ -1097,3 +1097,122 @@ body {
   width: 12.5rem;
   color: #737373;
 }
+
+/* 管理员页面 */
+.user-wrapper{
+	padding: .83rem;
+	flex:1;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.user-wrapper .user-header{
+	background-color: #fff;
+	height: 11.88rem;
+	overflow: hidden;
+	display: flex;
+}
+
+.user-wrapper .user-header > div{
+	flex:1;
+	overflow: hidden;
+}
+
+.user-wrapper .user-header .photo{
+	padding: 1.67rem 2.29rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.user-wrapper .user-header .photo .avatar{
+	width: 8.88rem;
+	height: 8.88rem;
+	overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+.user-wrapper .user-header .photo .avatar img{
+	transition: all ease-in-out .1s;
+}
+
+.user-wrapper .user-header .photo .avatar:hover img{
+	filter: blur(.17rem);
+}
+
+.user-wrapper .user-header .photo .avatar span{
+	position: absolute;
+	bottom: -1.5rem;
+	left: 0;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: .58rem;
+	color:#fff;
+	transition: all ease-in-out .3s;
+}
+
+.user-wrapper .user-header .photo .avatar:hover span{
+	bottom: 0;
+}
+
+.user-wrapper .user-header .info{
+	padding: 1.67rem 1.67rem 1.67rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.user-wrapper .user-header .info dl{
+	display: flex;
+	align-items: center;
+	flex:1;
+	overflow: hidden;
+	color:#707070;
+}
+
+.user-wrapper .user-header .info dl dt{
+	font-size: 1.46rem;
+}
+
+.user-wrapper .user-header .info dl dd{
+	font-size: 1.25rem;
+}
+
+.user-wrapper .user-menu{
+	padding: .83rem 1.04rem 0;
+	flex:1;
+	overflow: hidden;
+}
+
+.user-wrapper .user-menu ul{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.user-wrapper .user-menu ul li{
+	width: 33.3333%;
+	padding:.42rem .83rem;
+}
+
+.user-wrapper .user-menu ul li a{
+	width: 100%;
+	height: 100%;
+	color:#fff;
+	font-size: 1.33rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c43e49;
+	transition: all ease-in-out .5s;
+}
+
+.user-wrapper .user-menu ul li a:hover{
+	opacity: .6;
+}
