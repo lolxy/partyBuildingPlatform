@@ -1094,7 +1094,7 @@ body {
 }
 
 /* 视频列表 */
-.video-wrap {
+.video-wrap,.video-line-wrap {
   padding: 1.04rem 2.71rem;
   flex: 1;
   overflow-x: hidden;
@@ -1130,6 +1130,70 @@ body {
 .video-wrap li span.time {
   width: 12.5rem;
   color: #737373;
+}
+
+.video-line-wrap ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+}
+
+.video-line-wrap li{
+  width: 25%;
+  padding: .83rem 1.25rem;
+  list-style: none;
+}
+
+.video-line-wrap li a{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.33rem;
+  color: #737373;
+}
+
+.video-line-wrap li a span{
+  display: block;
+}
+
+.video-line-wrap li a span.pic{
+  width: 100%;
+  padding: .63rem;
+  background-color: #f5f5f5;
+  height:8.75rem;
+  overflow: hidden;
+}
+
+.video-line-wrap li a span.pic .bg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease-in-out .5s;
+}
+
+.video-line-wrap li a span.pic .bg:hover{
+  opacity: .85;
+  transform: scale(1.02);
+}
+
+.video-line-wrap li a .tit{
+  margin-top: .42rem;
+  height: 2.92rem;
+  line-height: 1.46rem;
+  overflow: hidden;
+  font-size: 1rem;
+  margin-bottom: .83rem;
+}
+
+.video-line-wrap li a .tit:hover{
+  color:#a00000;
+}
+
+.video-line-wrap li a .time{
+  color:#999;
+  font-size: .83rem;
 }
 
 /* 管理员页面 */
