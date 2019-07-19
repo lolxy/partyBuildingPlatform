@@ -1611,3 +1611,72 @@ body {
 	background-color: #f2f2f2;
 	text-align: center;
 }
+
+/* 缴费信息 */
+.payment-wrap{
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.payment-wrap h1{
+	width: 23.33rem;
+	height: 6.25rem;
+	margin: 0 auto;
+	font-size: 2.29rem;
+	background-color: #b50412;
+	border-radius: 6.25rem;
+	text-align: center;
+	color:#fff;
+	line-height: 6.25rem;
+	font-weight: 350;
+}
+
+.payment{
+	flex:1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	margin: .83rem;
+	padding: .42rem;
+}
+
+.payment .panel-header{
+	display: flex;
+}
+
+.payment .panel-header span{
+	text-align: center;
+	flex:1;
+	font-size: 1.67rem;
+	line-height: 4.17rem;
+}
+
+.payment dl{
+	display: flex;
+	font-size: 1.46rem;
+	align-items: center;
+	justify-content: center;
+	color:#232323;
+	margin: .83rem 0;
+}
+
+.payment .panel-body,.payment .panel-footer{
+	padding: .42rem;
+	text-align: center;
+}
+
+.payment .panel-body{
+	background: rgb(246,246,246);
+}
+
+.payment .panel-footer{
+	position: relative;
+}
+
+.payment .panel-footer .note{
+	position: absolute;
+	bottom: .83rem;
+	right: 0;
+	color:#999;
+}
