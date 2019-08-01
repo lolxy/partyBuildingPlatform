@@ -9,7 +9,7 @@
 html,
 body {
 	background-color: #ededed;
-	font-family: 'microsoft yahei';
+	font-family: "microsoft yahei";
 }
 
 .bg-white {
@@ -54,7 +54,8 @@ body {
 /* 图片自适应 */
 .img-responsive {
 	max-width: 100%;
-	height: auto;
+	height: 100%;
+	width: 100%;
 	vertical-align: top;
 }
 
@@ -70,15 +71,15 @@ body {
 .slider h1 {
 	height: 5rem;
 	line-height: 5rem;
-	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: #fff;
 	font-weight: 500;
+	padding-left: 1rem;
 	position: relative;
 }
 
 .slider h1:after {
-	content: '';
+	content: "";
 	width: 1.67rem;
 	height: 1.67rem;
 	background-color: #fff;
@@ -129,10 +130,10 @@ body {
 
 .slider .nav {
 	flex: 1;
-	max-height: 16rem;
+	max-height: 25rem;
 	min-height: 15rem;
 	overflow: hidden;
-	margin-top: 1rem;
+	margin-top: 6.25rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -151,7 +152,7 @@ body {
 .slider .nav a i {
 	display: block;
 	width: 2.8rem;
-	height: 60%;
+	height: 3.125rem;
 	margin-right: 0.83rem;
 	background-position: center;
 	background-size: contain;
@@ -199,7 +200,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex: 1;
-	height: 100%;
+	height: 5rem;
 	overflow: hidden;
 	font-size: 1.46rem;
 	color: #fff;
@@ -290,11 +291,11 @@ body {
 	text-align: left;
 	font-size: 1.25rem;
 	color: #fff;
-	background-color: rgba(181,4,18,.4);
+	background-color: rgba(181, 4, 18, 0.4);
 	line-height: 2.5rem;
 	padding: 0 0.83rem;
 	margin-bottom: 0;
-	font-family: 'microsoft yahei';
+	font-family: "microsoft yahei";
 }
 
 .icon-search {
@@ -334,7 +335,7 @@ body {
 
 .footer {
 	height: 2.5rem;
-	background-color: rgb(96,96,96);
+	background-color: rgb(96, 96, 96);
 	padding-left: 2.5rem;
 	font-size: 1.46rem;
 	line-height: 2.5rem;
@@ -353,7 +354,7 @@ body {
 	overflow: hidden;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 /* 菜单样式 */
@@ -402,7 +403,7 @@ body {
 .menu-wrap a:hover,
 .menu-wrap a.on {
 	color: #fae805;
-	background-color: #b20007;
+	background-color: #b50412;
 }
 
 .sub-menu a {
@@ -429,7 +430,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(226,226,226);
+	background-color: rgb(226, 226, 226);
 	margin-top: 0.83rem;
 }
 
@@ -562,9 +563,10 @@ body {
 
 .home-news .main .cbox h3 {
 	margin: 0;
-	font-size: 1.67rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	margin-bottom: 0.75rem;
+	line-height: 1.5;
 }
 
 .home-news .main .cbox h3 a {
@@ -578,15 +580,16 @@ body {
 }
 
 .home-news .main .cbox p {
-	font-size: 1.17rem;
-	line-height: 1.67rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
 	text-indent: 2em;
 	color: #606060;
 }
 
 .home-news .main .cbox .source {
 	text-align: right;
-	font-size: 1.25rem;
+	font-size: 1.65rem;
+	line-height: 1.5;
 	color: #606060;
 	margin-top: 0.63rem;
 }
@@ -603,7 +606,7 @@ body {
 
 .m-wrap .m-header {
 	min-height: 8rem;
-	background-color: #ba1e22;
+	background-color: #b50412;
 	margin-bottom: 0.83rem;
 	display: flex;
 	flex-direction: column;
@@ -617,13 +620,13 @@ body {
 	margin: 0;
 	font-size: 3.21rem;
 	font-weight: 800;
-	color: rgb(240,204,108);
+	color: rgb(240, 204, 108);
 	letter-spacing: 0.42rem;
 }
 
 .m-wrap .m-header span {
 	color: #fff;
-	font-size:1.25rem;
+	font-size: 1.25rem;
 }
 
 .m-wrap .diver {
@@ -647,15 +650,14 @@ body {
 .m-wrap .m-list ul li {
 	width: 33.33%;
 	display: flex;
-	align-items: center;
-	padding: 0 0.42rem;
+	padding: 0 2rem;
 	margin-bottom: 1.2rem;
 }
 
 .m-wrap .m-list ul li a {
-	font-size: 1.25rem;
-	color: rgb(26,26,26);
-	line-height: 2.08rem;
+	font-size: 2rem;
+	color: rgb(26, 26, 26);
+	line-height: 1.5;
 	font-weight: 300;
 }
 
@@ -688,12 +690,12 @@ body {
 
 .set-list li a.mui-navigate-right {
 	width: 100%;
-	height: 100%;
+	height: 5rem;
 	margin: 0;
 	display: flex;
 	align-items: center;
 	padding-left: 2.92rem;
-	font-size:2rem;
+	font-size: 2rem;
 	color: #a80000;
 	cursor: pointer;
 }
@@ -730,17 +732,17 @@ body {
 	margin-bottom: 0.83rem;
 	display: flex;
 	align-items: flex-end;
-	font-size:1.46rem;
+	font-size: 1.8rem;
 	color: #a00000;
 	font-weight: 400;
 }
 
 .honor-wrap h2::before {
 	display: block;
-	content: '';
+	content: "";
 	width: 1.25rem;
 	height: 1.25rem;
-	background-color: rgb(226,226,226);
+	background-color: rgb(226, 226, 226);
 	margin-left: 1.25rem;
 	margin-right: 0.75rem;
 }
@@ -759,9 +761,10 @@ body {
 }
 
 .honor-wrap .list a {
-	color: rgb(51,51,51);
-	font-size: 1.04rem;
+	color: rgb(51, 51, 51);
+	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
+	line-height: 1.5;
 }
 
 .honor-wrap .list a:hover {
@@ -779,8 +782,8 @@ body {
 .honor-wrap .lbox .list a {
 	display: block;
 	width: 100%;
-	font-size: 1.17rem;
-	line-height: 1.67rem;
+	font-size: 1.5rem;
+	line-height: 1.25;
 }
 
 .honor-wrap .rbox {
@@ -790,15 +793,19 @@ body {
 .honor-wrap .rbox .list .item {
 	width: 50%;
 	overflow: hidden;
-	height: 9.5rem;
+	height: 10rem;
 	padding: 0.42rem 0.83rem;
 }
 
 .honor-wrap .rbox .list .item p {
 	margin-bottom: 0;
-	height: 2.1rem;
-	line-height: 2.2rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
 	text-align: center;
+}
+
+.honor-wrap .rbox .list .item p a {
+	line-height: 2.5rem;
 }
 
 .honor-wrap .list-wrap {
@@ -869,7 +876,7 @@ body {
 	color: #fff;
 	text-align: right;
 	padding-right: 2.08rem;
-	margin-top: .83rem;
+	margin-top: 0.83rem;
 }
 
 .detail-content {
@@ -877,7 +884,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-
 }
 
 .detail-content .prev,
@@ -901,7 +907,7 @@ body {
 	height: 0;
 	border-top: 0.67rem solid transparent;
 	border-bottom: 0.67rem solid transparent;
-	content: '';
+	content: "";
 	display: block;
 }
 
@@ -921,19 +927,18 @@ body {
 	border-right: 0.67rem solid #fff;
 }
 
-.detail-content .content {
+.detail-content .contentDiv {
 	flex: 1;
-	padding-top: 1.67rem;
+	padding-top: 1.5rem;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-.detail-content .content p {
+.detail-content .contentDiv p {
 	margin-bottom: 2.08rem;
-	text-indent: 2em;
-	font-size: 1.54rem;
-	line-height: 2.08rem;
-	color:rgb(51,51,51);
+	font-size: 1.5rem;
+	line-height: 1.25;
+	color: rgb(51, 51, 51);
 }
 
 .detail-wrap .footer {
@@ -960,12 +965,15 @@ body {
 .news-list ul li .box {
 	background-color: #fff;
 	display: flex;
+	height: 15.625rem;
 	/* padding-right: 0.42rem; */
 }
 
 .news-list ul li .box .thumb {
 	padding: 0.67rem 1.5rem;
 	margin-right: 1.5rem;
+	height: 100%;
+	width: 30%;
 }
 
 .news-list ul li .box .content {
@@ -977,6 +985,7 @@ body {
 	padding-right: 5rem;
 	max-height: 12rem;
 	position: relative;
+	height: 100%;
 }
 
 .news-list ul li .box .content h2 {
@@ -1016,6 +1025,7 @@ body {
 	width: 8.33rem;
 	min-height: 12rem;
 	display: flex;
+	height: 100%;
 }
 
 .news-list ul li .box .action > div {
@@ -1054,15 +1064,15 @@ body {
 }
 
 .icon-pause {
-	background-image: url('../img/icon_play1.png');
+	background-image: url("../img/icon_play1.png");
 }
 
 .icon-download {
-	background-image: url('../img/icon_download.png');
+	background-image: url("../img/icon_download.png");
 }
 
 .news-list ul li .box .action .play .down:after {
-	content: '';
+	content: "";
 	width: 1.42rem;
 	height: 0.83rem;
 	background: url(../img/xsj.png) center center no-repeat;
@@ -1210,7 +1220,7 @@ body {
 	line-height: 1.67rem;
 	overflow: hidden;
 	font-size: 1.17rem;
-	color:rgb(51,51,51);
+	color: rgb(51, 51, 51);
 	margin-bottom: 0.83rem;
 }
 
@@ -1298,7 +1308,7 @@ body {
 	align-items: center;
 	flex: 1;
 	overflow: hidden;
-	color: rgb(51,51,51);
+	color: rgb(51, 51, 51);
 }
 
 .user-wrapper .user-header .info dl dt {
@@ -1331,7 +1341,7 @@ body {
 .user-wrapper .user-menu ul li:nth-child(6n + 4) a,
 .user-wrapper .user-menu ul li:nth-child(6n + 5) a,
 .user-wrapper .user-menu ul li:nth-child(6n + 6) a {
-	background-color: rgba(181,4,18,0.7);
+	background-color: rgba(181, 4, 18, 0.7);
 }
 
 .user-wrapper .user-menu ul li a {
@@ -1342,7 +1352,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(181,4,18,0.8);
+	background-color: rgba(181, 4, 18, 0.8);
 	border-radius: 2.08rem;
 	opacity: 1;
 	transition: opacity ease-in-out 0.5s;
@@ -1404,7 +1414,7 @@ body {
 	line-height: 2.5rem;
 	text-align: center;
 	background-color: #e2e2e2;
-	font-size:1.46rem;
+	font-size: 1.46rem;
 	color: #ae0000;
 }
 
@@ -1439,7 +1449,7 @@ body {
 	height: 2.29rem;
 	text-align: center;
 	color: #ba1b1d;
-	font-size:1.25rem;
+	font-size: 1.25rem;
 	font-weight: 300;
 }
 
@@ -1495,7 +1505,7 @@ body {
 }
 
 .dj-wrap .dj-lbox .cat-list dl {
-	padding: 0.42rem .5rem;
+	padding: 0.42rem 0.5rem;
 }
 
 .dj-wrap .dj-lbox .cat-list dl dd {
@@ -1507,7 +1517,7 @@ body {
 }
 
 .dj-wrap .dj-lbox .cat-list dl a::before {
-	content: '-';
+	content: "-";
 	margin-right: 0.42rem;
 }
 
@@ -1553,9 +1563,9 @@ body {
 	font-weight: 500;
 }
 
-.dj-wrap .dj-cbox li p a{
+.dj-wrap .dj-cbox li p a {
 	font-size: 1.46rem;
-	color:rgb(26,26,26);
+	color: rgb(26, 26, 26);
 	line-height: 2rem;
 }
 
@@ -1568,44 +1578,45 @@ body {
 }
 
 .dj-wrap .dj-cbox li span {
-	color: rgb(96,96,96);
+	color: rgb(96, 96, 96);
 	font-size: 1.04rem;
 	line-height: 1.5rem;
 }
 
 /* 消息列表 */
-.message-list{
-	height: 100%;
+.message-list {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-.message-list li{
+.message-list li {
 	margin: 10px;
 	margin-top: 0;
 	padding: 10px;
 	background-color: #fff;
 }
 
-.message-list li .panel-header{
+.message-list li .panel-header {
 	font-size: 1.75rem;
-	color:#b10006;
-	padding:.83rem .83rem 1.25rem .83rem;
+	color: #b10006;
+	padding: 0.83rem 0.83rem 1.25rem 0.83rem;
 	text-align: center;
 	position: relative;
 }
 
-.message-list li:nth-child(1) .panel-header:before,.message-list li:nth-child(2) .panel-header:before,.message-list li:nth-child(3) .panel-header:before{
+.message-list li:nth-child(1) .panel-header:before,
+.message-list li:nth-child(2) .panel-header:before,
+.message-list li:nth-child(3) .panel-header:before {
 	display: block;
 	width: 1.25rem;
 	height: 1.25rem;
 	background-color: #b10006;
-	content:"";
+	content: "";
 	border-radius: 1.25rem;
 	position: absolute;
 }
 
-.message-list li .panel-body{
+.message-list li .panel-body {
 	font-size: 1.67rem;
 	padding: 2.08rem;
 	background-color: #f2f2f2;
@@ -1613,13 +1624,13 @@ body {
 }
 
 /* 缴费信息 */
-.payment-wrap{
+.payment-wrap {
 	height: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 }
-.payment-wrap h1{
+.payment-wrap h1 {
 	width: 23.33rem;
 	height: 6.25rem;
 	margin: 0 auto;
@@ -1627,56 +1638,57 @@ body {
 	background-color: #b50412;
 	border-radius: 6.25rem;
 	text-align: center;
-	color:#fff;
+	color: #fff;
 	line-height: 6.25rem;
 	font-weight: 350;
 }
 
-.payment{
-	flex:1;
+.payment {
+	flex: 1;
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color: #fff;
-	margin: .83rem;
-	padding: .42rem;
+	margin: 0.83rem;
+	padding: 0.42rem;
 }
 
-.payment .panel-header{
+.payment .panel-header {
 	display: flex;
 }
 
-.payment .panel-header span{
+.payment .panel-header span {
 	text-align: center;
-	flex:1;
+	flex: 1;
 	font-size: 1.67rem;
 	line-height: 4.17rem;
 }
 
-.payment dl{
+.payment dl {
 	display: flex;
 	font-size: 1.46rem;
 	align-items: center;
 	justify-content: center;
-	color:#232323;
-	margin: .83rem 0;
+	color: #232323;
+	margin: 0.83rem 0;
 }
 
-.payment .panel-body,.payment .panel-footer{
-	padding: .42rem;
+.payment .panel-body,
+.payment .panel-footer {
+	padding: 0.42rem;
 	text-align: center;
 }
 
-.payment .panel-body{
-	background: rgb(246,246,246);
+.payment .panel-body {
+	background: rgb(246, 246, 246);
 }
 
-.payment .panel-footer{
+.payment .panel-footer {
 	position: relative;
 }
 
-.payment .panel-footer .note{
+.payment .panel-footer .note {
 	position: absolute;
-	bottom: .83rem;
+	bottom: 0.83rem;
 	right: 0;
-	color:#999;
+	color: #999;
 }
