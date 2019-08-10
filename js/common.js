@@ -12,3 +12,17 @@
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
+// 打开密码设置框
+function openSetPasswordDialog(){
+	$('#setPassworddialog').fadeIn()
+}
+
+// 关闭密码设置框
+$('#setPassworddialog').click(function(){
+	$(this).fadeOut()
+})
+
+$('#setPassworddialog .form').click(function(e){
+	e.stopPropagation()
+})

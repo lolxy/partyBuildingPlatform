@@ -650,12 +650,12 @@ body {
 .m-wrap .m-list ul li {
 	width: 33.33%;
 	display: flex;
-	padding: 0 2rem;
+	padding: 0 0.42rem;
 	margin-bottom: 1.2rem;
 }
 
 .m-wrap .m-list ul li a {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: rgb(26, 26, 26);
 	line-height: 1.5;
 	font-weight: 300;
@@ -1692,3 +1692,113 @@ body {
 	right: 0;
 	color: #999;
 }
+
+/* 密码设置 */
+.mui-backdrop{
+	background-color: rgba(0,0,0,.6);
+}
+.dialog{display: flex;align-items: center;justify-content: center;}
+.dialog .form form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.dialog .form .title{
+	color:#fff;
+	font-size: 1.875rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.dialog .form .input input{
+	border-radius: 3.75rem;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	width: 25rem;
+	font-size: 1.875rem;
+	padding: 0 1.25rem;
+	margin-bottom: 2.5rem;
+}
+.dialog .form .btnbox{
+	display: flex;
+	justify-content: space-around;
+}
+
+.dialog .form .btnbox button{
+	width:50%;
+	margin: 0 1.25rem;
+	border-radius: 2.5rem;
+	font-size: 1.875rem;
+	background-color: rgb(179,11,27);
+	transition: all ease-in-out .4s;
+	border:none;
+}
+
+.dialog .form .btnbox button:hover{
+	opacity: .8;
+}
+
+/* 登录框 */
+.login-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-wrapper .login-form{
+	width: 60%;
+}
+
+.login-wrapper .login-form h1{
+	text-align: center;
+	font-size: 1.875rem;
+	font-weight: 500;
+	margin-bottom: 1.875rem;
+	color:rgb(179,11,27);
+}
+
+.login-wrapper .login-form .iputgroup{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.25rem;
+}
+
+.login-wrapper .login-form label{
+	font-size: 1.75rem;
+	margin-right: 2.5rem;
+	color:rgb(179,11,27);
+}
+
+.login-wrapper .login-form .input{
+	flex:1;
+	overflow: hidden;
+}
+
+.login-wrapper .login-form .input input{
+	font-size: 1.75rem;
+	height: 3.125rem;
+	border-radius: 3.125rem;
+	padding: 0.625rem 1.25rem;
+	background-color: rgb(213,144,150);
+	border: none;
+}
+
+.login-wrapper .login-form .btnbox{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.875rem;
+}
+
+.login-wrapper .login-form .btnbox button{
+	width: 33.3333%;
+	margin: 0 1.25rem;
+	border-radius: 2.5rem;
+	font-size: 1.875rem;
+	background-color: rgb(179,11,27);
+	border: none;
+	transition: all ease-in-out .4s;
+}
+
+.login-wrapper .login-form .btnbox button:hover{
+	opacity: .8;
+}
+
