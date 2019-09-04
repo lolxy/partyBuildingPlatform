@@ -432,6 +432,22 @@ body {
 	justify-content: center;
 	background-color: rgb(226, 226, 226);
 	margin-top: 0.83rem;
+	position: relative;
+}
+
+.sub-menu .scroll {
+	position: absolute;
+	width: 8.6rem;
+	height: 4.17rem;
+	padding: 10px;
+	right: 10px;
+	top: 0;
+	overflow: hidden;
+}
+
+.sub-menu .scroll img {
+	max-height: 100%;
+	cursor: pointer;
 }
 
 .sub-menu .searchbox i {
@@ -526,6 +542,23 @@ body {
 	padding-left: 2.08rem;
 	font-weight: 300;
 	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-news h2 span {
+	flex: 1;
+	overflow: hidden;
+}
+
+.home-news h2 .scroll {
+	padding: 10px;
+}
+
+.home-news h2 img {
+	max-height: 100%;
+	cursor: pointer;
+	width: 8rem;
 }
 
 .home-news .main {
@@ -852,6 +885,19 @@ body {
 	margin-top: -1.5rem;
 	background: url(../img/back.png) center center no-repeat;
 	background-size: contain;
+}
+
+.detail-wrap .header .scroll {
+	width: 8.5rem;
+	height: 2.42rem;
+	position: absolute;
+	top: 50%;
+	right: -8rem;
+	margin-top: -1.21rem;
+	background: url(../img/WechatIMG15.png) center center no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .detail-wrap .hbox {
@@ -1694,22 +1740,26 @@ body {
 }
 
 /* 密码设置 */
-.mui-backdrop{
-	background-color: rgba(0,0,0,.6);
+.mui-backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
 }
-.dialog{display: flex;align-items: center;justify-content: center;}
-.dialog .form form{
+.dialog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dialog .form form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.dialog .form .title{
-	color:#fff;
+.dialog .form .title {
+	color: #fff;
 	font-size: 1.875rem;
 	text-align: center;
 	margin-bottom: 2.5rem;
 }
-.dialog .form .input input{
+.dialog .form .input input {
 	border-radius: 3.75rem;
 	height: 3.75rem;
 	line-height: 3.75rem;
@@ -1718,87 +1768,86 @@ body {
 	padding: 0 1.25rem;
 	margin-bottom: 2.5rem;
 }
-.dialog .form .btnbox{
+.dialog .form .btnbox {
 	display: flex;
 	justify-content: space-around;
 }
 
-.dialog .form .btnbox button{
-	width:50%;
+.dialog .form .btnbox button {
+	width: 50%;
 	margin: 0 1.25rem;
 	border-radius: 2.5rem;
 	font-size: 1.875rem;
-	background-color: rgb(179,11,27);
-	transition: all ease-in-out .4s;
-	border:none;
+	background-color: rgb(179, 11, 27);
+	transition: all ease-in-out 0.4s;
+	border: none;
 }
 
-.dialog .form .btnbox button:hover{
-	opacity: .8;
+.dialog .form .btnbox button:hover {
+	opacity: 0.8;
 }
 
 /* 登录框 */
-.login-wrapper{
+.login-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.login-wrapper .login-form{
+.login-wrapper .login-form {
 	width: 60%;
 }
 
-.login-wrapper .login-form h1{
+.login-wrapper .login-form h1 {
 	text-align: center;
 	font-size: 1.875rem;
 	font-weight: 500;
 	margin-bottom: 1.875rem;
-	color:rgb(179,11,27);
+	color: rgb(179, 11, 27);
 }
 
-.login-wrapper .login-form .iputgroup{
+.login-wrapper .login-form .iputgroup {
 	display: flex;
 	align-items: center;
 	margin-bottom: 1.25rem;
 }
 
-.login-wrapper .login-form label{
+.login-wrapper .login-form label {
 	font-size: 1.75rem;
 	margin-right: 2.5rem;
-	color:rgb(179,11,27);
+	color: rgb(179, 11, 27);
 }
 
-.login-wrapper .login-form .input{
-	flex:1;
+.login-wrapper .login-form .input {
+	flex: 1;
 	overflow: hidden;
 }
 
-.login-wrapper .login-form .input input{
+.login-wrapper .login-form .input input {
 	font-size: 1.75rem;
 	height: 3.125rem;
 	border-radius: 3.125rem;
 	padding: 0.625rem 1.25rem;
-	background-color: rgb(213,144,150);
+	background-color: rgb(213, 144, 150);
 	border: none;
 }
 
-.login-wrapper .login-form .btnbox{
+.login-wrapper .login-form .btnbox {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 1.875rem;
 }
 
-.login-wrapper .login-form .btnbox button{
+.login-wrapper .login-form .btnbox button {
 	width: 33.3333%;
 	margin: 0 1.25rem;
 	border-radius: 2.5rem;
 	font-size: 1.875rem;
-	background-color: rgb(179,11,27);
+	background-color: rgb(179, 11, 27);
 	border: none;
-	transition: all ease-in-out .4s;
+	transition: all ease-in-out 0.4s;
 }
 
-.login-wrapper .login-form .btnbox button:hover{
-	opacity: .8;
+.login-wrapper .login-form .btnbox button:hover {
+	opacity: 0.8;
 }
-
