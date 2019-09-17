@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="slider">
+				<h1>智慧党政平台</h1>
+
+				<div class="avatar-wrap">
+					<div class="photo">
+						<div
+							class="thumb"
+							style="background-image: url(img/img01.png);"
+						></div>
+					</div>
+					<div class="tbox">
+						<p>党政机关大楼</p>
+						<p>二楼会议室</p>
+					</div>
+				</div>
+
+				<div class="nav">
+					<a href="./index.html" class="on">
+						<i class="icon-home"></i>
+						<span>智慧党建</span>
+					</a>
+					<a href="./zhangcheng.html">
+						<i class="icon-play"></i>
+						<span>编辑播放</span>
+					</a>
+					<a href="#">
+						<i class="icon-chat"></i>
+						<span>信息通知</span>
+					</a>
+					<a href="./user.html">
+						<i class="icon-user"></i>
+						<span>个人中心</span>
+					</a>
+				</div>
+
+				<div class="setbox">
+					<a href="./set.html">
+						<i class="icon-set"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="time">
+						<span>2019年5月17日</span>
+						<span>周五</span>
+						<span>11:19</span>
+						<span>晴</span>
+						<span>22°C - 32°C</span>
+					</div>
+
+					<div class="rightbox">
+						<div class="searchbox">
+							<form action="" method="post">
+								<input type="search" class="search" placeholder="搜索..." />
+								<input type="submit" value="" class="icon-search" />
+							</form>
+						</div>
+
+						<div class="add-plus">
+							<a href="#"><i class="icon-plus"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrapper device-wrap">
+					<h1>设备信息</h1>
+
+					<div class="device">
+						<div class="lbox">
+							<div class="photo">
+								<img src="" alt="" />
+							</div>
+						</div>
+						<div class="rbox">
+							<dl>
+								<dt>设备全称：</dt>
+								<dd>智慧党政宣传平台-1</dd>
+							</dl>
+							<dl>
+								<dt>运行系统：</dt>
+								<dd>Android 6.0.1</dd>
+							</dl>
+							<dl>
+								<dt>运行内存：</dt>
+								<dd>2GB</dd>
+							</dl>
+							<dl>
+								<dt>存储内存：</dt>
+								<dd>8GB</dd>
+							</dl>
+							<dl>
+								<dt>当前平台版本：</dt>
+								<dd>DZPT-01</dd>
+							</dl>
+							<dl>
+								<dt>平台使用期限：</dt>
+								<dd>2019年12月31日到期</dd>
+							</dl>
+							<span>(智慧党政宣传平台版本更新，请留意设置—软件更新提示)</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer">
+					厦门魔晶科创智能科技有限公司
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/common.js"></script>
+		<script>
+			// 资讯弹出层切换
+			$('.down').click(function() {
+				var tipbox = $(this)
+					.parents('.box')
+					.siblings('.tipbox');
+				tipbox.toggle();
+			});
+		</script>
+	</body>
+</html>

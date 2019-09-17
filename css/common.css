@@ -9,7 +9,7 @@
 html,
 body {
 	background-color: #ededed;
-	font-family: "microsoft yahei";
+	font-family: 'microsoft yahei';
 }
 
 .bg-white {
@@ -79,7 +79,7 @@ body {
 }
 
 .slider h1:after {
-	content: "";
+	content: '';
 	width: 1.67rem;
 	height: 1.67rem;
 	background-color: #fff;
@@ -295,7 +295,7 @@ body {
 	line-height: 2.5rem;
 	padding: 0 0.83rem;
 	margin-bottom: 0;
-	font-family: "microsoft yahei";
+	font-family: 'microsoft yahei';
 }
 
 .icon-search {
@@ -772,7 +772,7 @@ body {
 
 .honor-wrap h2::before {
 	display: block;
-	content: "";
+	content: '';
 	width: 1.25rem;
 	height: 1.25rem;
 	background-color: rgb(226, 226, 226);
@@ -953,7 +953,7 @@ body {
 	height: 0;
 	border-top: 0.67rem solid transparent;
 	border-bottom: 0.67rem solid transparent;
-	content: "";
+	content: '';
 	display: block;
 }
 
@@ -1110,15 +1110,15 @@ body {
 }
 
 .icon-pause {
-	background-image: url("../img/icon_play1.png");
+	background-image: url('../img/icon_play1.png');
 }
 
 .icon-download {
-	background-image: url("../img/icon_download.png");
+	background-image: url('../img/icon_download.png');
 }
 
 .news-list ul li .box .action .play .down:after {
-	content: "";
+	content: '';
 	width: 1.42rem;
 	height: 0.83rem;
 	background: url(../img/xsj.png) center center no-repeat;
@@ -1563,7 +1563,7 @@ body {
 }
 
 .dj-wrap .dj-lbox .cat-list dl a::before {
-	content: "-";
+	content: '-';
 	margin-right: 0.42rem;
 }
 
@@ -1657,7 +1657,7 @@ body {
 	width: 1.25rem;
 	height: 1.25rem;
 	background-color: #b10006;
-	content: "";
+	content: '';
 	border-radius: 1.25rem;
 	position: absolute;
 }
@@ -1737,6 +1737,74 @@ body {
 	bottom: 0.83rem;
 	right: 0;
 	color: #999;
+}
+
+/* 设备信息 */
+.device-wrap {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.device-wrap h1 {
+	width: 23.33rem;
+	height: 6.25rem;
+	margin: 0 auto;
+	font-size: 2.29rem;
+	background-color: #b50412;
+	border-radius: 6.25rem;
+	text-align: center;
+	color: #fff;
+	line-height: 6.25rem;
+	font-weight: 350;
+}
+
+.device {
+	flex: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	margin: 0.83rem;
+	display: flex;
+}
+
+.device .lbox {
+	width: 474px;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 60px;
+}
+
+.device .lbox .photo {
+	width: 209px;
+	height: 209px;
+	background-color: #f5f5f5;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 60px;
+}
+
+.device .rbox {
+	flex: 1;
+	padding-top: 68px;
+	padding-bottom: 40px;
+	overflow-y: auto;
+}
+
+.device .rbox dl {
+	display: flex;
+	font-size: 40px;
+	color: #232323;
+	margin-bottom: 50px;
+	line-height: 40px;
+}
+
+.device .rbox span {
+	color: #666;
+	font-size: 35px;
+	margin-top: 73px;
+	margin-bottom: 50px;
 }
 
 /* 密码设置 */
